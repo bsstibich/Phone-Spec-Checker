@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def buttonf(phonevar):
+def buttonf(phonevar): #function to use when button is pushed, changes display to show the specs of the selected phone
     global Xr,XsMax,i8,i8p,X,Xs,s10,s10e,s10p,s105g
     name = phonevar["name"]
     price = phonevar["full price"]
@@ -14,7 +14,9 @@ def buttonf(phonevar):
 HEIGHT = 800
 WIDTH = 800
 
-#Phones
+#Dictionaries containg the phone specs
+#If Done now, would have been made into a class rather than several dictionaries
+
 Xr = {
     "name":"iPhone XR",
     "full price":"$749.99",
@@ -105,7 +107,7 @@ s105g = {
 }
 
 
-#Base
+#Base of GUI
 root = tk.Tk()
 root.title("Spec Checker")
 canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
@@ -115,6 +117,7 @@ frame = tk.Frame(root, bg='#802618',)
 frame.place(relx=0.5, rely=0, relheight=1, relwidth=1, anchor="n")
 
 #Buttons
+#If done now, would have made a function to place all these buttons, rather than copy and pasting the code
 button = tk.Button(frame, text="iPhone Xs Max",font=('ariel',20), bg="#5c5b52",fg=("#f2f0da"),command=lambda: buttonf(XsMax))
 button.place(relheight=0.05, relwidth=0.49)
 
