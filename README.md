@@ -1,4 +1,4 @@
 # Phone-Spec-Checker
 (Made in Summer of 2019)
 
-This was made when I was working at Sprint and some coworkers needed help remember the specs of certain phoens. Its a simple tkinter gui with info on the newest phones at the time of making.
+Tkinter GUI made while working at Sprint. Several coworkers were having trouble remember all the notable specs of the newest phones so I created this program in order to give them a tool to check when they couldn't remember.
